@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bugün Ne Yapabilirim?</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bugün Ne Yapabilirim?</h1>
+
+        <p class="subtitle">
+            Bugün kendine güzel bir plan bul.
+        </p>
+
+        <div class="form">
+
+            <label for="location">📍 Nerede bulunuyorsun?</label>
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Örn: İzmir"
+            >
+
+
+            <label for="time">⏰ Ne kadar zamanın var?</label>
+
+            <select id="time">
+
+                <option value="">Seçiniz</option>
+                <option value="1">1 saat</option>
+                <option value="2">2 saat</option>
+                <option value="3">3 saat</option>
+                <option value="4">4 saat</option>
+                <option value="5">5+ saat</option>
+
+            </select>
+
+
+            <label for="budget">💰 Bütçen ne kadar?</label>
+
+            <input
+                type="number"
+                id="budget"
+                placeholder="Örn: 500"
+            >
+
+
+            <label for="people">👥 Kaç kişisiniz?</label>
+
+            <select id="people">
+
+                <option value="">Seçiniz</option>
+                <option value="1">1 kişi</option>
+                <option value="2">2 kişi</option>
+                <option value="3">3 kişi</option>
+                <option value="4">4 kişi</option>
+                <option value="5">5+ kişi</option>
+
+            </select>
+
+
+            <label for="activity">🎯 Ne yapmak istiyorsun?</label>
+
+            <select id="activity">
+
+                <option value="">Fark etmez</option>
+                <option value="sakin">Sakin</option>
+                <option value="eglence">Eğlence</option>
+                <option value="kultur">Kültür & Sanat</option>
+                <option value="dogada">Doğada</option>
+                <option value="yemek">Yemek & Kahve</option>
+                <option value="spor">Spor</option>
+
+            </select>
+
+
+            <button id="planButton">
+                Bana Plan Bul ✨
+            </button>
+
+        </div>
+
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
