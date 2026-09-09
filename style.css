@@ -71,3 +71,18 @@ button:hover {
 #result {
     margin-top: 25px;
 }
+.activity-card {
+    background:#f8f9fa;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.activity-card h2 {
+    margin-bottom: 10px;
+}
+.activity-card p {
+    margin-top: 5px;
+    color: #555;
+}

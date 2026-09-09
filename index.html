@@ -20,16 +20,37 @@
             Bugün kendine güzel bir plan bul.
         </p>
 
+
         <div class="form">
 
-            <label for="location">📍 Nerede bulunuyorsun?</label>
+            <!-- KONUM -->
 
-            <input
-                type="text"
-                id="location"
-                placeholder="Örn: İzmir"
-            >
+            <label>📍 Nerede plan yapmak istiyorsun?</label>
 
+            <button type="button" id="useLocationButton">
+                📍 Konumumu Kullan
+            </button>
+
+
+            <!-- ŞEHİR -->
+
+            <label for="city">Şehir</label>
+
+            <select id="city">
+                <option value="">Şehir seçiniz</option>
+            </select>
+
+
+            <!-- İLÇE -->
+
+            <label for="district">İlçe</label>
+
+            <select id="district" disabled>
+                <option value="">Önce şehir seçiniz</option>
+            </select>
+
+
+            <!-- ZAMAN -->
 
             <label for="time">⏰ Ne kadar zamanın var?</label>
 
@@ -45,6 +66,8 @@
             </select>
 
 
+            <!-- BÜTÇE -->
+
             <label for="budget">💰 Bütçen ne kadar?</label>
 
             <input
@@ -53,6 +76,8 @@
                 placeholder="Örn: 500"
             >
 
+
+            <!-- KİŞİ -->
 
             <label for="people">👥 Kaç kişisiniz?</label>
 
@@ -68,20 +93,42 @@
             </select>
 
 
+            <!-- AKTİVİTE -->
+
             <label for="activity">🎯 Ne yapmak istiyorsun?</label>
 
             <select id="activity">
 
                 <option value="">Fark etmez</option>
-                <option value="sakin">Sakin</option>
-                <option value="eglence">Eğlence</option>
-                <option value="kultur">Kültür & Sanat</option>
-                <option value="dogada">Doğada</option>
-                <option value="yemek">Yemek & Kahve</option>
-                <option value="spor">Spor</option>
+
+                <option value="sakin">
+                    Sakin
+                </option>
+
+                <option value="eglence">
+                    Eğlence
+                </option>
+
+                <option value="kultur">
+                    Kültür & Sanat
+                </option>
+
+                <option value="dogada">
+                    Doğada
+                </option>
+
+                <option value="yemek">
+                    Yemek & Kahve
+                </option>
+
+                <option value="spor">
+                    Spor
+                </option>
 
             </select>
 
+
+            <!-- BUTON -->
 
             <button id="planButton">
                 Bana Plan Bul ✨
@@ -89,6 +136,8 @@
 
         </div>
 
+
+        <!-- SONUÇLAR -->
 
         <div id="result"></div>
 
